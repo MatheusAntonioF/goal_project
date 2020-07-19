@@ -1,12 +1,18 @@
 import React from 'react';
 
+import { ThemeProvider } from 'styled-components';
+
+import light from './styles/themes/light';
+
 import GlobalStyles from './styles/global';
 
-const src: React.FC = () => (
-  <>
+import Main from './pages/Main';
+
+const App: React.FC = () => (
+  <ThemeProvider theme={light}>
     <GlobalStyles />
-    <h1>teste</h1>
-  </>
+    <Main />
+  </ThemeProvider>
 );
 
-export default src;
+export default App;

@@ -37,12 +37,13 @@ module.exports = {
   },
   settings: {
     "import/resolver": {
+      "babel-plugin-root-import": {
+        rootPathSuffix: "src"
+      },
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"],
       },
-      "babel-plugin-root-import": {
-        rootPathSuffix: "src"
-      }
+     
     },
   }
 };
