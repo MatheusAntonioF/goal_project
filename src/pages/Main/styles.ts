@@ -8,7 +8,9 @@ export const Container = styled.div`
   width: 100%;
   min-height: 100vh;
 
-  background: linear-gradient(to right, ${(props) => props.theme.spendings.default}, ${(props) => props.theme.receipts.default});
+  background: linear-gradient(to right, 
+    ${(props) => props.theme.investments.default}, 
+    ${(props) => props.theme.receipts.default});
 
   .custom-shape-divider-bottom-1594850540 {
     position: absolute;

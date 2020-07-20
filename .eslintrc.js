@@ -33,7 +33,10 @@ module.exports = {
     camelcase: "off",
     "no-console": ["error", { allow: ["tron"] }],
     "no-use-before-define": "off",
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "react/prop-types": 'off',
+    "react/button-has-type": 'off',
+    "react/jsx-props-no-spreading": "off"
   },
   settings: {
     "import/resolver": {

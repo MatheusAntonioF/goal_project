@@ -31,4 +31,19 @@ export default createGlobalStyle`
   a {
     text-decoration: none;
   }
+
+  ::-webkit-scrollbar {
+   width: 2px;
+
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4d4d70; 
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4d4d70; 
+  }
 `;

@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface IBodyComponent {
+  color: string,
+}
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -20,7 +24,7 @@ export const Header = styled.div`
 
   width: 100%;
 
-  padding: 8px;
+  padding: 8px 25px;
 
   background: ${(props) => props.theme.white.default};
   border-radius: 12px;
@@ -32,13 +36,18 @@ export const Header = styled.div`
     span.title {
       font-size: 32px;
       font-weight: 500;
-      color: ${(props) => props.theme.receipts.default};
+      color: ${(props) => props.theme.investments.default};
     }
     
     span.subtitle {
       font-size: 16px;
       color: ${(props) => props.theme.grafit.hover};
     }   
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
   }
 `;
 
@@ -94,7 +103,23 @@ export const DivValues = styled.div`
   }
 `;
 
-export const Body = styled.div`
+export const DivOptions = styled.div`
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  background: ${(props) => props.theme.white.default};
+
+  border-radius: 8px;
+
+  margin-top: 10px;
+
+  padding: 8px 10px;
+  
+`;
+
+export const Body = styled.div<IBodyComponent>`
   display: flex;
   flex-direction: column;
 
@@ -104,13 +129,14 @@ export const Body = styled.div`
 
   background: ${(props) => props.theme.white.default};
 
-  padding: 5px;
+  padding: 10px;
 
   border-radius: 8px;
 
   span.title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
+    color: ${(props) => props.theme[props.color].default};
   }
 
 `;
