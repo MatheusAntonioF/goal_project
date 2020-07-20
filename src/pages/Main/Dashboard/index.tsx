@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import { MdMonetizationOn } from 'react-icons/md';
 
+import { FiArrowDown } from 'react-icons/fi';
+
 import {
   Container,
   Header,
@@ -13,6 +15,7 @@ import {
 import money_icon from '../../../assets/money.svg';
 
 import Loading from '../../../components/Loading';
+import Button from '../../../components/Button';
 
 import api from '../../../services/api';
 
@@ -68,7 +71,14 @@ const Dashboard: React.FC = () => {
                 </div>
               </DivValues>
             </Header>
-            <DivOptions>teste</DivOptions>
+            <DivOptions>
+              <Button
+                color="info"
+                icon={<FiArrowDown />}
+                onClick={() => {}}
+              >Detalhar
+              </Button>
+            </DivOptions>
             <Body color="investments">
               <span className="title">
                 Receita

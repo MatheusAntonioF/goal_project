@@ -12,9 +12,6 @@ export const Container = styled.div`
   width: 100%;
 
   margin-top: 10px;
-
-  background: pink;
-
 `;
 
 export const BoxValues = styled.div`
@@ -38,7 +35,6 @@ export const BoxValues = styled.div`
   height: 165px;
   
   padding: 20px 10px 20px;
-
 
   background: ${(props) => props.theme.grafit.disabled};
 
