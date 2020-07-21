@@ -16,19 +16,9 @@ export const ButtonComponent = styled.button<IProps>`
 
   padding: 8px 10px;
 
-  span {
-    font-weight: bold;
+  font-weight: bold;
 
-    width: 80%;
-
-    color: #fff;
-  }
-
-  svg {
-    margin-left: 5px;
-    font-size: 20px;
-    color: ${(props) => props.theme.white.default};
-  }
+  color: #fff;
 
   &:hover {
     transform: scale(1.1);

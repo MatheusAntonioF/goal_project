@@ -57,7 +57,9 @@ const Entries: React.FC<PropsEntries> = ({ pathRequest }) => {
           ))}
         </BoxValues>
         <BoxLabel color={pathRequest === 'receipts' ? 'investments' : 'debts'}>
-          <span className="total">TOTAL</span>
+          <div className="box">
+            <span className="total">TOTAL</span>
+          </div>
           <span>
             {entries
               .reduce((total, current) => total + current.value, 0)

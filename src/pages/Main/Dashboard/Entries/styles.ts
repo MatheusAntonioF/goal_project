@@ -43,7 +43,6 @@ export const BoxValues = styled.div`
 export const BoxLabel = styled.div<IProps>`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   width: 15%;
@@ -51,30 +50,33 @@ export const BoxLabel = styled.div<IProps>`
 
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
 
-  ${(props) => (props.color === 'investments'
-    ? css`
-      background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, 
-        rgba(0,199,145,1) 100%, 
-        rgba(0,212,255,1) 100%);
-    `
-    : css`
-    background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, 
-      rgba(247,25,47,1) 100%, 
-      rgba(0,212,255,1) 100%);
-    `
-  )}
+  background: ${(props) => props.theme.grafit.default};
 
-  span.total {
-    font-size: 28px;
-    font-weight: 700;
-    color: ${(props) => props.theme.white.default};
+  border: 2px solid ${(props) => props.theme.info.default};
 
+  div.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 18px;
+
+    width: 100%;
+    padding: 10px;
+    background: ${(props) => props.theme.info.default};
+
+    span.total {
+      font-size: 28px;
+      font-weight: 700;
+      color: ${(props) => props.theme.white.default};
+    }
   }
   
   span {
     font-size: 24px;
-    margin-top: 5px;
+    margin-top: 20px;
     color: ${(props) => props.theme.white.default};
   }
 `;

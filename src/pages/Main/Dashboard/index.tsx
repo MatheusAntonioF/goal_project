@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import { MdMonetizationOn } from 'react-icons/md';
 
-import { FiArrowDown } from 'react-icons/fi';
-
 import {
   Container,
   Header,
@@ -74,7 +72,6 @@ const Dashboard: React.FC = () => {
             <DivOptions>
               <Button
                 color="info"
-                icon={<FiArrowDown />}
                 onClick={() => {}}
               >Detalhar
               </Button>
