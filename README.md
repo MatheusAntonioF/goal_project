@@ -12,7 +12,7 @@
 git clone https://github.com/MatheusAntonioF/goal_project.git
 ```
 
-### 2 - Inside the directory install the dependences using yarn (recommend) or npm 
+### 2 - Inside the directory install the dependences using yarn (recommended) or npm 
 
 ```
 yarn 
