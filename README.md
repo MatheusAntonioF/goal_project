@@ -27,3 +27,8 @@ npm install
 ```
  yarn start-api
 ```
+
+### 4 - Start the application
+```
+yarn start
+```
